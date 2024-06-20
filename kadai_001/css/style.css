@@ -1,0 +1,157 @@
+ /* PC、スマホ共通スタイル */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+  }
+ body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+body {
+    /* max-width: 1080px; */
+    padding: auto; 
+    margin: auto;
+}
+
+/* ヘッダー*/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ナビゲーション */
+#prof-line {
+    width: 200px;
+    border: 1px solid #000000; 
+    height: 50px;
+}
+#prof-line > a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 34px;
+    font-weight: bold;  
+    margin-left: 10px;    
+}
+#nav-pc {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;  
+}
+#nav-pc > a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 34px;
+    font-weight: bold;      
+}
+
+/* メインビジュアル */
+#main-visual {   
+    width: 100%;
+    margin: 0 auto;
+}
+.midashi {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 34px;
+}
+#about-div {
+    display: flex;
+    max-width: 960px;
+    margin: 10px auto;
+}
+#about-div > img {
+    width: 30%;
+    height: 30%;
+    margin: 20px;
+    border-radius: 50%;
+
+}
+#name-and-prof {
+    width: 70%;
+    margin: 20px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+#name-and-prof > h3 {
+    font-size: 24px;
+}
+li {
+    font-size: 21px;
+}
+#photo3 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 20px auto;
+    justify-content: space-evenly;
+}
+.photo-and-comment {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-position-y: top;
+    width: 25%;  
+}
+.photo-and-comment > p {
+    width: 250px;
+    font-size: 21px;
+}
+.photos {
+    width: 250px;
+    padding-top: 0;
+}
+footer {
+    text-align:  center; 
+    margin: 50px 0 10px 0;
+}
+
+/*====================
+  スマートフォン用のスタイル
+  =====================*/
+@media screen and (max-width: 767px) {
+    
+    #about-div {
+        display: block;
+    }
+    #photo3 {
+        display: block;
+    }
+
+   /* スマホ用ナビゲーションの表示切替 */
+
+    #prof-line > a {
+        font-size: 28px;
+    }
+    #nav-pc > a {
+        font-size: 28px;
+    }
+    #about-div > img {
+        width: 60%;
+        max-width: 230px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #name-and-prof {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .photo-and-comment {
+        width: 250px;
+        text-align: center;
+        padding-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+}
